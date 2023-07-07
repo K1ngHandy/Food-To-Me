@@ -14,3 +14,16 @@ Eggs is now available!
 Bread is now available!
 Yogurt is now available!
 */
+
+// Looping over object properties
+const foodItem = {
+    name: "bananas",
+    price: 2.99,
+    availability: false
+}
+
+for (let prop in foodItem) { // iterates through foodItem object
+    if (prop === 'price') {  // property: price
+        console.log(`This product costs $${foodItem[prop]}`)
+    } // prints "This product costs $2.99"
+}
